@@ -1,0 +1,15 @@
+01:42:05 **** Build of configuration gcc-debug for project veins_inet ****
+make MODE=debug -j12 all 
+make[1]: Entering directory '/c/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/subprojects/veins_inet/src'
+MSGC: veins_inet/VeinsInetSampleMessage.msg
+veins_inet/VeinsInetSampleMessage.msg:27: Error: cannot resolve import 'inet.common.INETDefs'
+veins_inet/VeinsInetSampleMessage.msg:28: Error: cannot resolve import 'inet.common.packet.chunk.Chunk'
+veins_inet/VeinsInetSampleMessage.msg:34: Error: 'VeinsInetSampleMessage': unknown base class 'inet::FieldsChunk'
+opp_msgtool: error in 1 file(s)
+make[1]: *** [Makefile:140: veins_inet/VeinsInetSampleMessage_m.h] Error 1
+make[1]: Leaving directory '/c/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/subprojects/veins_inet/src'
+make: *** [Makefile:36: all] Error 2
+"make MODE=debug -j12 all" terminated with exit code 2. Build might be incomplete.
+
+01:42:06 Build Failed. 5 errors, 0 warnings. (took 1s.600ms)
+

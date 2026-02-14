@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Pandora/simulations/package.ned&apos; to &apos;RSUExampleScenario.ned&apos;" description="Rename resource &apos;package.ned&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="simulations/package.ned" name="RSUExampleScenario.ned" stamp="1770304433802" updateReferences="true"/>
+</session>

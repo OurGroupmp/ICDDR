@@ -1,0 +1,9 @@
+14:59:26 **** Incremental Build of configuration release for project Pandora ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/Pandora/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/Pandora/src'
+
+14:59:27 Build Finished. 0 errors, 0 warnings. (took 1s.44ms)
+

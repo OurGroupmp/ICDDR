@@ -1,0 +1,159 @@
+01:30:56 **** Incremental Build of configuration debug for project NoReroute ****
+make MODE=debug all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/NoReroute/src'
+MSGC: NoRerouteMessage.msg
+NoRerouteRSU.cc
+In file included from NoRerouteRSU.cc:1:
+In file included from ./NoRerouteRSU.h:2:
+In file included from C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/modules/application/ieee80211p/DemoBaseApplLayer.h:30:
+In file included from C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/modules/messages/DemoServiceAdvertisement_m.h:37:
+In file included from C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/utils/Coord_m.h:39:
+C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/utils/Coord.h:337:27: warning: 'veins::Coord::info' redeclared inline; 'dllimport' attribute ignored [-Wignored-attributes]
+inline std::string Coord::info() const
+                          ^
+1 warning generated.
+NoRerouteVehicle.cc
+In file included from NoRerouteVehicle.cc:1:
+In file included from ./NoRerouteVehicle.h:3:
+In file included from C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/modules/application/ieee80211p/DemoBaseApplLayer.h:30:
+In file included from C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/modules/messages/DemoServiceAdvertisement_m.h:37:
+In file included from C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/utils/Coord_m.h:39:
+C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/utils/Coord.h:337:27: warning: 'veins::Coord::info' redeclared inline; 'dllimport' attribute ignored [-Wignored-attributes]
+inline std::string Coord::info() const
+                          ^
+1 warning generated.
+NoRerouteMessage_m.cc
+In file included from NoRerouteMessage_m.cc:31:
+In file included from ./NoRerouteMessage_m.h:26:
+In file included from C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/utils/Coord_m.h:39:
+C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/utils/Coord.h:337:27: warning: 'veins::Coord::info' redeclared inline; 'dllimport' attribute ignored [-Wignored-attributes]
+inline std::string Coord::info() const
+                          ^
+1 warning generated.
+Creating executable: ../out/clang-debug/src/NoReroute_dbg.exe
+ld.lld: warning: duplicate symbol: .refptr._ZTIDn
+>>> defined at ../out/clang-debug/src/NoRerouteMessage_m.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: .refptr._ZTIPl
+>>> defined at ../out/clang-debug/src/NoRerouteMessage_m.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: veins::Coord::info[abi:cxx11]() const
+>>> defined at C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/utils/Coord.h:338
+>>>            ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for veins::BaseModule
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for veins::BaseApplLayer
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for veins::BatteryAccess
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for veins::BaseFrame1609_4
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for veins::DemoBaseApplLayer
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for veins::Coord
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for veins::BaseLayer
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cComponent
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cException
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cIListener
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cSoftOwner
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::noncopyable
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cNamedObject
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cOwnedObject
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cRuntimeError
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cSimpleModule
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cClassDescriptor
+>>> defined at ../out/clang-debug/src/NoRerouteMessage_m.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cNoncopyableOwnedObject
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cEvent
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cModule
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cObject
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cPacket
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cMessage
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cListener
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for omnetpp::cObject*
+>>> defined at ../out/clang-debug/src/NoRerouteMessage_m.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: typeinfo for std::exception
+>>> defined at ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+
+ld.lld: warning: duplicate symbol: non-virtual thunk to veins::BaseModule::finish(omnetpp::cComponent*, int)
+>>> defined at C:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src/veins/base/modules/BaseModule.h:0
+>>>            ../out/clang-debug/src/NoRerouteRSU.o
+>>> defined at libveins_dbg.dll
+make[1]: Leaving directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/NoReroute/src'
+
+01:31:14 Build Finished. 0 errors, 3 warnings. (took 18s.154ms)
+

@@ -1,0 +1,9 @@
+15:37:54 **** Incremental Build of configuration release for project Rider ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/Rider/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/Rider/src'
+
+15:37:55 Build Finished. 0 errors, 0 warnings. (took 973ms)
+

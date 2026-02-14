@@ -1,0 +1,8 @@
+12:11:58 **** Incremental Build of configuration gcc-release for project veins ****
+make MODE=release -j12 all 
+make[1]: Entering directory '/c/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src'
+
+12:12:01 Build Finished. 0 errors, 0 warnings. (took 2s.155ms)
+

@@ -1,0 +1,430 @@
+file 174040 1771049103                                          
+version 3
+run Default-0-20260214-11:34:26-9892
+attr configname Default
+attr datetime 20260214-11:34:26
+attr datetimef 20260214-113426
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RSUExampleScenario
+attr processid 9892
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../Downloads/veins-5.3.1/veins-veins-5.3.1/images
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level info
+config image-path ../../images
+config network RSUExampleScenario
+config debug-on-errors true
+config print-undisposed true
+config sim-time-limit 200s
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500m
+config *.playgroundSizeY 2500m
+config *.playgroundSizeZ 50m
+config *.annotations.draw true
+config *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+config *.manager.updateInterval 1s
+config *.manager.host "\"localhost\""
+config *.manager.port 9999
+config *.manager.autoShutdown true
+config *.manager.launchConfig "xmldoc(\"erlangen.launchd.xml\")"
+config *.tls[*].mobility.x 0
+config *.tls[*].mobility.y 0
+config *.tls[*].mobility.z 3
+config *.tls[*].applType "\"org.car2x.veins.modules.application.traci.TraCIDemoTrafficLightApp\""
+config *.tls[*].logicType "\"org.car2x.veins.modules.world.traci.trafficLight.logics.TraCITrafficLightSimpleLogic\""
+config *.rsu[0].mobility.x 2000
+config *.rsu[0].mobility.y 2000
+config *.rsu[0].mobility.z 3
+config *.rsu[*].applType "\"FCRRSU\""
+config *.rsu[*].appl.headerLength "80 bit"
+config *.rsu[*].appl.sendBeacons false
+config *.rsu[*].appl.dataOnSch false
+config *.rsu[*].appl.beaconInterval 1s
+config *.rsu[*].appl.beaconUserPriority 7
+config *.rsu[*].appl.dataUserPriority 5
+config *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].applType "\"FCRVehicle\""
+config *.node[*].appl.headerLength "80 bit"
+config *.node[*].appl.sendBeacons false
+config *.node[*].appl.dataOnSch false
+config *.node[*].appl.beaconInterval 1s
+config *.node[*].veinsmobility.x 0
+config *.node[*].veinsmobility.y 0
+config *.node[*].veinsmobility.z 0
+config *.node[*].veinsmobility.setHostSpeed false
+config *.node[*0].veinsmobility.accidentCount 1
+config *.node[*0].veinsmobility.accidentStart 73s
+config *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 RSUExampleScenario.rsu[0].nic.phy80211p RadioState ETV
+vector 1 RSUExampleScenario.rsu[0].nic.phy80211p RadioChannel ETV
+vector 2 RSUExampleScenario.node[0].nic.phy80211p RadioState ETV
+vector 3 RSUExampleScenario.node[0].nic.phy80211p RadioChannel ETV
+vector 4 RSUExampleScenario.manager posx ETV
+vector 5 RSUExampleScenario.manager posy ETV
+vector 6 RSUExampleScenario.manager speed ETV
+vector 7 RSUExampleScenario.manager acceleration ETV
+vector 8 RSUExampleScenario.manager co2emission ETV
+vector 9 RSUExampleScenario.node[1].nic.phy80211p RadioState ETV
+vector 10 RSUExampleScenario.node[1].nic.phy80211p RadioChannel ETV
+vector 11 RSUExampleScenario.manager posx ETV
+vector 12 RSUExampleScenario.manager posy ETV
+vector 13 RSUExampleScenario.manager speed ETV
+vector 14 RSUExampleScenario.manager acceleration ETV
+vector 15 RSUExampleScenario.manager co2emission ETV
+vector 16 RSUExampleScenario.node[2].nic.phy80211p RadioState ETV
+vector 17 RSUExampleScenario.node[2].nic.phy80211p RadioChannel ETV
+vector 18 RSUExampleScenario.manager posx ETV
+vector 19 RSUExampleScenario.manager posy ETV
+vector 20 RSUExampleScenario.manager speed ETV
+vector 21 RSUExampleScenario.manager acceleration ETV
+vector 22 RSUExampleScenario.manager co2emission ETV
+vector 23 RSUExampleScenario.node[3].nic.phy80211p RadioState ETV
+vector 24 RSUExampleScenario.node[3].nic.phy80211p RadioChannel ETV
+vector 25 RSUExampleScenario.manager posx ETV
+vector 26 RSUExampleScenario.manager posy ETV
+vector 27 RSUExampleScenario.manager speed ETV
+vector 28 RSUExampleScenario.manager acceleration ETV
+vector 29 RSUExampleScenario.manager co2emission ETV
+vector 30 RSUExampleScenario.node[4].nic.phy80211p RadioState ETV
+vector 31 RSUExampleScenario.node[4].nic.phy80211p RadioChannel ETV
+vector 32 RSUExampleScenario.manager posx ETV
+vector 33 RSUExampleScenario.manager posy ETV
+vector 34 RSUExampleScenario.manager speed ETV
+vector 35 RSUExampleScenario.manager acceleration ETV
+vector 36 RSUExampleScenario.manager co2emission ETV
+vector 37 RSUExampleScenario.node[5].nic.phy80211p RadioState ETV
+vector 38 RSUExampleScenario.node[5].nic.phy80211p RadioChannel ETV
+vector 39 RSUExampleScenario.manager posx ETV
+vector 40 RSUExampleScenario.manager posy ETV
+vector 41 RSUExampleScenario.manager speed ETV
+vector 42 RSUExampleScenario.manager acceleration ETV
+vector 43 RSUExampleScenario.manager co2emission ETV
+vector 44 RSUExampleScenario.node[6].nic.phy80211p RadioState ETV
+vector 45 RSUExampleScenario.node[6].nic.phy80211p RadioChannel ETV
+vector 46 RSUExampleScenario.manager posx ETV
+vector 47 RSUExampleScenario.manager posy ETV
+vector 48 RSUExampleScenario.manager speed ETV
+vector 49 RSUExampleScenario.manager acceleration ETV
+vector 50 RSUExampleScenario.manager co2emission ETV
+vector 51 RSUExampleScenario.node[7].nic.phy80211p RadioState ETV
+vector 52 RSUExampleScenario.node[7].nic.phy80211p RadioChannel ETV
+vector 53 RSUExampleScenario.manager posx ETV
+vector 54 RSUExampleScenario.manager posy ETV
+vector 55 RSUExampleScenario.manager speed ETV
+vector 56 RSUExampleScenario.manager acceleration ETV
+vector 57 RSUExampleScenario.manager co2emission ETV
+vector 58 RSUExampleScenario.node[8].nic.phy80211p RadioState ETV
+vector 59 RSUExampleScenario.node[8].nic.phy80211p RadioChannel ETV
+vector 60 RSUExampleScenario.manager posx ETV
+vector 61 RSUExampleScenario.manager posy ETV
+vector 62 RSUExampleScenario.manager speed ETV
+vector 63 RSUExampleScenario.manager acceleration ETV
+vector 64 RSUExampleScenario.manager co2emission ETV
+vector 65 RSUExampleScenario.node[9].nic.phy80211p RadioState ETV
+vector 66 RSUExampleScenario.node[9].nic.phy80211p RadioChannel ETV
+vector 67 RSUExampleScenario.manager posx ETV
+vector 68 RSUExampleScenario.manager posy ETV
+vector 69 RSUExampleScenario.manager speed ETV
+vector 70 RSUExampleScenario.manager acceleration ETV
+vector 71 RSUExampleScenario.manager co2emission ETV
+vector 72 RSUExampleScenario.node[10].nic.phy80211p RadioState ETV
+vector 73 RSUExampleScenario.node[10].nic.phy80211p RadioChannel ETV
+vector 74 RSUExampleScenario.manager posx ETV
+vector 75 RSUExampleScenario.manager posy ETV
+vector 76 RSUExampleScenario.manager speed ETV
+vector 77 RSUExampleScenario.manager acceleration ETV
+vector 78 RSUExampleScenario.manager co2emission ETV
+vector 79 RSUExampleScenario.node[11].nic.phy80211p RadioState ETV
+vector 80 RSUExampleScenario.node[11].nic.phy80211p RadioChannel ETV
+vector 81 RSUExampleScenario.manager posx ETV
+vector 82 RSUExampleScenario.manager posy ETV
+vector 83 RSUExampleScenario.manager speed ETV
+vector 84 RSUExampleScenario.manager acceleration ETV
+vector 85 RSUExampleScenario.manager co2emission ETV
+vector 86 RSUExampleScenario.node[12].nic.phy80211p RadioState ETV
+vector 87 RSUExampleScenario.node[12].nic.phy80211p RadioChannel ETV
+vector 88 RSUExampleScenario.manager posx ETV
+vector 89 RSUExampleScenario.manager posy ETV
+vector 90 RSUExampleScenario.manager speed ETV
+vector 91 RSUExampleScenario.manager acceleration ETV
+vector 92 RSUExampleScenario.manager co2emission ETV
+vector 93 RSUExampleScenario.node[13].nic.phy80211p RadioState ETV
+vector 94 RSUExampleScenario.node[13].nic.phy80211p RadioChannel ETV
+vector 95 RSUExampleScenario.manager posx ETV
+vector 96 RSUExampleScenario.manager posy ETV
+vector 97 RSUExampleScenario.manager speed ETV
+vector 98 RSUExampleScenario.manager acceleration ETV
+vector 99 RSUExampleScenario.manager co2emission ETV
+vector 100 RSUExampleScenario.node[14].nic.phy80211p RadioState ETV
+vector 101 RSUExampleScenario.node[14].nic.phy80211p RadioChannel ETV
+vector 102 RSUExampleScenario.manager posx ETV
+vector 103 RSUExampleScenario.manager posy ETV
+vector 104 RSUExampleScenario.manager speed ETV
+vector 105 RSUExampleScenario.manager acceleration ETV
+vector 106 RSUExampleScenario.manager co2emission ETV
+vector 107 RSUExampleScenario.node[15].nic.phy80211p RadioState ETV
+vector 108 RSUExampleScenario.node[15].nic.phy80211p RadioChannel ETV
+vector 109 RSUExampleScenario.manager posx ETV
+vector 110 RSUExampleScenario.manager posy ETV
+vector 111 RSUExampleScenario.manager speed ETV
+vector 112 RSUExampleScenario.manager acceleration ETV
+vector 113 RSUExampleScenario.manager co2emission ETV
+vector 114 RSUExampleScenario.node[16].nic.phy80211p RadioState ETV
+vector 115 RSUExampleScenario.node[16].nic.phy80211p RadioChannel ETV
+vector 116 RSUExampleScenario.manager posx ETV
+vector 117 RSUExampleScenario.manager posy ETV
+vector 118 RSUExampleScenario.manager speed ETV
+vector 119 RSUExampleScenario.manager acceleration ETV
+vector 120 RSUExampleScenario.manager co2emission ETV
+vector 121 RSUExampleScenario.node[17].nic.phy80211p RadioState ETV
+vector 122 RSUExampleScenario.node[17].nic.phy80211p RadioChannel ETV
+vector 123 RSUExampleScenario.manager posx ETV
+vector 124 RSUExampleScenario.manager posy ETV
+vector 125 RSUExampleScenario.manager speed ETV
+vector 126 RSUExampleScenario.manager acceleration ETV
+vector 127 RSUExampleScenario.manager co2emission ETV
+vector 128 RSUExampleScenario.node[18].nic.phy80211p RadioState ETV
+vector 129 RSUExampleScenario.node[18].nic.phy80211p RadioChannel ETV
+vector 130 RSUExampleScenario.manager posx ETV
+vector 131 RSUExampleScenario.manager posy ETV
+vector 132 RSUExampleScenario.manager speed ETV
+vector 133 RSUExampleScenario.manager acceleration ETV
+vector 134 RSUExampleScenario.manager co2emission ETV
+vector 135 RSUExampleScenario.node[19].nic.phy80211p RadioState ETV
+vector 136 RSUExampleScenario.node[19].nic.phy80211p RadioChannel ETV
+vector 137 RSUExampleScenario.manager posx ETV
+vector 138 RSUExampleScenario.manager posy ETV
+vector 139 RSUExampleScenario.manager speed ETV
+vector 140 RSUExampleScenario.manager acceleration ETV
+vector 141 RSUExampleScenario.manager co2emission ETV
+vector 142 RSUExampleScenario.node[20].nic.phy80211p RadioState ETV
+vector 143 RSUExampleScenario.node[20].nic.phy80211p RadioChannel ETV
+vector 144 RSUExampleScenario.manager posx ETV
+vector 145 RSUExampleScenario.manager posy ETV
+vector 146 RSUExampleScenario.manager speed ETV
+vector 147 RSUExampleScenario.manager acceleration ETV
+vector 148 RSUExampleScenario.manager co2emission ETV
+vector 149 RSUExampleScenario.node[21].nic.phy80211p RadioState ETV
+vector 150 RSUExampleScenario.node[21].nic.phy80211p RadioChannel ETV
+vector 151 RSUExampleScenario.manager posx ETV
+vector 152 RSUExampleScenario.manager posy ETV
+vector 153 RSUExampleScenario.manager speed ETV
+vector 154 RSUExampleScenario.manager acceleration ETV
+vector 155 RSUExampleScenario.manager co2emission ETV
+vector 156 RSUExampleScenario.node[22].nic.phy80211p RadioState ETV
+vector 157 RSUExampleScenario.node[22].nic.phy80211p RadioChannel ETV
+vector 158 RSUExampleScenario.manager posx ETV
+vector 159 RSUExampleScenario.manager posy ETV
+vector 160 RSUExampleScenario.manager speed ETV
+vector 161 RSUExampleScenario.manager acceleration ETV
+vector 162 RSUExampleScenario.manager co2emission ETV
+vector 163 RSUExampleScenario.node[23].nic.phy80211p RadioState ETV
+vector 164 RSUExampleScenario.node[23].nic.phy80211p RadioChannel ETV
+vector 165 RSUExampleScenario.manager posx ETV
+vector 166 RSUExampleScenario.manager posy ETV
+vector 167 RSUExampleScenario.manager speed ETV
+vector 168 RSUExampleScenario.manager acceleration ETV
+vector 169 RSUExampleScenario.manager co2emission ETV
+vector 170 RSUExampleScenario.node[24].nic.phy80211p RadioState ETV
+vector 171 RSUExampleScenario.node[24].nic.phy80211p RadioChannel ETV
+vector 172 RSUExampleScenario.manager posx ETV
+vector 173 RSUExampleScenario.manager posy ETV
+vector 174 RSUExampleScenario.manager speed ETV
+vector 175 RSUExampleScenario.manager acceleration ETV
+vector 176 RSUExampleScenario.manager co2emission ETV
+vector 177 RSUExampleScenario.node[25].nic.phy80211p RadioState ETV
+vector 178 RSUExampleScenario.node[25].nic.phy80211p RadioChannel ETV
+vector 179 RSUExampleScenario.manager posx ETV
+vector 180 RSUExampleScenario.manager posy ETV
+vector 181 RSUExampleScenario.manager speed ETV
+vector 182 RSUExampleScenario.manager acceleration ETV
+vector 183 RSUExampleScenario.manager co2emission ETV
+vector 184 RSUExampleScenario.node[26].nic.phy80211p RadioState ETV
+vector 185 RSUExampleScenario.node[26].nic.phy80211p RadioChannel ETV
+vector 186 RSUExampleScenario.manager posx ETV
+vector 187 RSUExampleScenario.manager posy ETV
+vector 188 RSUExampleScenario.manager speed ETV
+vector 189 RSUExampleScenario.manager acceleration ETV
+vector 190 RSUExampleScenario.manager co2emission ETV
+vector 191 RSUExampleScenario.node[27].nic.phy80211p RadioState ETV
+vector 192 RSUExampleScenario.node[27].nic.phy80211p RadioChannel ETV
+vector 193 RSUExampleScenario.manager posx ETV
+vector 194 RSUExampleScenario.manager posy ETV
+vector 195 RSUExampleScenario.manager speed ETV
+vector 196 RSUExampleScenario.manager acceleration ETV
+vector 197 RSUExampleScenario.manager co2emission ETV
+vector 198 RSUExampleScenario.node[28].nic.phy80211p RadioState ETV
+vector 199 RSUExampleScenario.node[28].nic.phy80211p RadioChannel ETV
+vector 200 RSUExampleScenario.manager posx ETV
+vector 201 RSUExampleScenario.manager posy ETV
+4	14710 2097 2 87 1 85 85 2140.3234504706 2450.6248001783 199105.2612136 467481331.0864
+5	16807 2104 2 87 1 85 85 1578.4613427464 2120.9360540062 163125.47328329 316208834.73572
+6	18911 1922 3 87 2 85 84 0 13.999815066161 943.64353906981 12646.834752616
+7	20833 2036 4 87 3 85 83 -4.5 2.2078255666373 -4.1061966058897 110.31084190894
+8	22869 1896 4 87 3 85 83 0.973 8.9023657158011 191.62449200914 654.73605414597
+11	24765 2111 5 87 4 85 82 2144.6343920679 2450.4780716181 192777.37103722 454147383.61526
+12	26876 2109 5 87 4 85 82 1578.4506684253 2120.5707901428 156873.09060193 303201457.04546
+13	28985 2104 6 87 5 85 81 0.0015515939487704 13.999179182528 939.12722686582 12479.944351177
+14	31089 2248 7 87 6 85 80 -4.4608324981877 2.0360211738362 -4.0317133648631 83.793538595098
+15	33337 1960 7 87 6 85 80 0.973 8.4455276517466 185.96076826196 622.86606353984
+18	35297 2040 8 87 7 85 79 2148.9725696122 2450.659299592 186332.62233905 440289768.98297
+19	37337 2039 8 87 7 85 79 1578.4476927174 2120.9591539605 150733.23595347 290608175.10009
+20	39376 2018 9 87 8 85 78 0.036137165618741 13.988464023101 933.85349354578 12385.98119935
+21	41394 2157 10 87 9 85 77 -4.439656564949 1.9953480610903 -3.8948259970183 79.661421095786
+22	43551 1876 10 87 9 85 77 0.973 8.2469806235914 181.88843068019 622.0978693048
+25	45427 1968 11 87 10 85 76 2153.6793911499 2450.5176811377 179874.97166991 426381247.82725
+26	47395 1969 11 87 10 85 76 1578.4548774119 2120.89862148 144564.68371229 277895822.462
+27	49364 1943 12 87 11 85 75 0.47706516133759 13.999869057706 928.65758554743 12327.284292537
+28	51307 2073 13 87 12 85 74 -4.4516438954996 2.1600366940722 -3.5306326220166 82.087500111753
+29	53380 1804 13 87 12 85 74 0.973 8.3694083781091 179.29399137313 635.03913565229
+32	55184 1889 14 87 13 85 73 2167.3180400142 2450.2643256367 173775.56218605 414104121.30694
+33	57073 1892 14 87 13 85 73 1578.4413889889 2120.7890396183 137558.89321956 262042822.7132
+34	58965 1866 15 87 14 85 72 4.1202440707026 13.999156328384 915.61073877005 11976.364850208
+35	60831 1995 16 87 15 85 71 -3.0438156671366 2.2053875824949 2.5277268828375 63.532595563193
+36	62826 1789 16 87 15 85 71 0.973 8.3113257001554 171.5459664672 570.92764455864
+39	64615 1817 17 87 16 85 70 2185.9437322411 2450.2288519962 167092.01970948 399195087.35801
+40	66432 1808 17 87 16 85 70 1578.4544820301 2120.7769512711 131747.15467444 250644205.56034
+41	68240 1782 18 87 17 85 69 4.11254450365 13.998410794288 896.18412921995 11947.152034665
+42	70022 1904 19 87 18 85 68 -2.7630811355829 2.2240570376068 6.0648940752145 57.709663416023
+43	71926 1687 19 87 18 85 68 0.973 8.8530434321966 171.85064321102 631.50995868695
+46	73613 1727 20 87 19 85 67 2225.104168434 2450.4290832727 160500.72580479 384708853.45102
+47	75340 1736 20 87 19 85 67 1578.4572625495 2120.8571727062 125311.82943084 236916625.22876
+48	77076 1704 21 87 20 85 66 4.067372106413 13.998108282317 856.25755550533 11397.255768458
+49	78780 1814 22 87 21 85 65 -4.5 2.2806860777922 9.8814919503694 56.642882441686
+50	80594 1657 22 87 21 85 65 0.973 7.99669039818 167.07530525108 593.19288980263
+53	82251 1659 23 87 22 85 64 2334.0502360606 2450.425700888 154346.8765861 372322529.4135
+54	83910 1658 23 87 22 85 64 1578.4561478766 2120.6685398351 117064.94331388 216202291.12188
+55	85568 1631 24 87 23 85 63 4.0608742667126 13.988286828815 737.01380905115 8858.1746977433
+56	87199 1748 25 87 24 85 62 -4.0902664311319 2.2485621904209 9.8728062196079 43.121482966979
+57	88947 1596 25 87 24 85 62 0.973 7.7795198337473 146.67485976313 467.90273973958
+60	90543 1580 26 87 25 85 61 2333.8307837447 2450.3331846521 147261.41893156 355585015.70472
+61	92123 1580 26 87 25 85 61 1578.4503688179 2120.8352207402 111425.34354462 205441063.63173
+62	93703 1556 27 87 26 85 60 4.0643546214392 13.969642005244 717.41230701972 8840.6618094255
+63	95259 1638 28 87 27 85 59 -2.5327374308898 2.2114755053329 9.8051291072117 46.546554237296
+64	96897 1441 28 87 27 85 59 0.973 8.1424170686949 146.72059864927 563.19359038909
+67	98338 1501 29 87 28 85 58 2334.4106986645 2450.5456380536 140148.91254655 338718794.72482
+68	99839 1498 29 87 28 85 58 1578.4516975414 2120.7381428564 105721.36181182 194459633.80683
+69	101337 1475 30 87 29 85 57 3.8828872453123 13.9821787317 698.13177365514 8836.8061968381
+70	102812 1547 31 87 30 85 56 -2.0639267666339 2.241401846346 9.8489388009095 47.114915530532
+71	104359 1369 31 87 30 85 56 0.973 8.0279260088719 144.92200678598 567.88031890022
+74	105728 1421 32 87 31 85 55 2334.1012518223 2450.4185123161 132952.91110466 321455200.33408
+75	107149 1424 32 87 31 85 55 1578.4486005865 2120.709696901 99899.6044827 183052421.30404
+76	108573 1400 33 87 32 85 54 4.1947202222332 13.995173138522 679.44205453481 8823.8137968373
+77	109973 1471 34 87 33 85 53 -3.1648216729014 2.1736677003349 9.6368696179463 53.10666529253
+78	111444 1321 34 87 33 85 53 0.973 8.1784534517424 143.92659521342 584.29848121556
+81	112765 1346 35 87 34 85 52 2334.3047181928 2450.2375759503 125668.16669998 303768062.09273
+82	114111 1350 35 87 34 85 52 1578.4356359942 2111.9000886511 93623.581404085 169939379.19744
+83	115461 1313 36 87 35 85 51 3.8489417596173 13.991812187003 649.60376975763 8534.1779059969
+84	116774 1392 37 87 36 85 50 -3.7795119519133 2.4266907445854 10.127819742936 52.51038078695
+85	118166 1274 37 87 36 85 50 0.973 8.5414929895905 136.21978512441 533.06072587332
+88	119440 1267 38 87 37 85 49 2333.9422594152 2450.6327858772 118345.12350368 285893602.48522
+89	120707 1268 38 87 37 85 49 1578.451217806 2066.9777687937 87162.690878493 156106478.60407
+90	121975 1243 39 87 38 85 48 3.9219617499206 13.999427454877 602.74062858521 7831.0256664034
+91	123218 1308 40 87 39 85 47 -4.484147937888 2.005882587668 10.009476821082 50.761469706827
+92	124526 1197 40 87 39 85 47 0.973 8.3337809675313 128.36420941092 497.20292328
+95	125723 1190 41 87 40 85 46 2334.8575809059 2450.1405621319 111071.39688358 268254149.14694
+96	126913 1187 41 87 40 85 46 1578.4448455973 2032.3765962329 81203.69680216 144197213.61355
+97	128100 1165 42 87 41 85 45 4.0161385181755 13.984478115658 567.91190588028 7427.8701469464
+98	129265 1220 43 87 42 85 44 -2.37 2.099131180218 9.9517244849657 41.24971160283
+99	130485 1091 43 87 42 85 44 0.973 7.9216434958082 123.71396776225 498.20805702323
+102	131576 1159 44 87 43 85 43 2334.4301713972 2450.5525084347 103768.72131022 250475885.34612
+103	132735 1160 44 87 43 85 43 1578.4619682319 1996.4059083294 75288.715519593 132486943.40748
+104	133895 1130 45 87 44 85 42 3.9992962979057 13.999378900521 532.62870882812 7010.4095050851
+105	135025 1178 46 87 45 85 41 -3.874490280494 2.1025782027747 9.8711967469056 51.747176363777
+106	136203 1084 46 87 45 85 41 0.973 8.8489569245764 119.77603173145 522.97996988363
+109	137287 1076 47 87 46 85 40 2334.3497222776 2450.6591322088 96434.963236774 232547719.28407
+110	138363 1074 47 87 46 85 40 1578.4567965213 1956.2118775267 69374.888755766 120817026.66812
+111	139437 1051 48 87 47 85 39 4.1510441398274 13.985586905845 492.17651254769 6458.2405421599
+112	140488 1090 49 87 48 85 38 -4.4394248623416 2.0949775185599 9.8023176794893 52.879394704375
+113	141578 993 49 87 48 85 38 0.973 8.0996331329532 113.54313074572 497.86185655127
+116	142571 995 50 87 49 85 37 2334.7865815668 2449.5046488661 89080.883005983 214520488.81803
+117	143566 994 50 87 49 85 37 1578.4441374587 1912.55164361 63493.97530809 109310784.19425
+118	144560 969 51 87 50 85 36 3.8447853377257 13.996701665553 447.91808097178 5830.7505865132
+119	145529 1002 52 87 51 85 35 -4.467785977983 2.078282451923 10.093913658803 51.10259995372
+120	146531 910 52 87 51 85 35 0.973 8.6161362223097 106.40522236143 469.0985457466
+123	147441 916 53 87 52 85 34 2333.8835802077 2440.771675627 81331.433709326 194595073.76296
+124	148357 914 53 87 52 85 34 1578.4585047252 1792.4560405463 56873.575530305 95256666.218082
+125	149271 890 54 87 53 85 33 3.8698786158062 12.051696254104 326.73319770361 3333.9975309676
+126	150161 925 55 87 54 85 32 -2.6994206590577 2.1075876856176 8.1527381484921 26.037729335143
+127	151086 849 55 87 54 85 32 0.973 7.0081679316487 77.25048964375 259.30919091726
+130	151935 835 56 87 55 85 31 2334.6360260849 2439.4110753136 74107.158123853 177193694.59541
+131	152770 835 56 87 55 85 31 1578.4678993914 1773.7451031953 51734.807638297 86432342.659412
+132	153605 808 57 87 56 85 30 4.0700236807532 13.050162045497 307.02632253216 3273.2534606522
+133	154413 822 58 87 57 85 29 -1.9673241697191 2.2792685258412 8.3812165019406 36.640196286058
+134	155235 712 58 87 57 85 29 0.973 7.9383681111683 78.795231713514 360.06160923231
+137	155947 753 59 87 58 85 28 2334.0026215508 2437.7154563254 66909.688941185 159919026.7122
+138	156700 753 59 87 58 85 28 1578.4570502462 1750.594295227 46545.695296941 77449352.584965
+139	157453 726 60 87 59 85 27 3.8447639940612 13.95880981739 285.20779087412 3196.7615573109
+140	158179 732 61 87 60 85 26 -2.449031687555 2.1769276289176 10.114045823329 42.012245945593
+141	158911 601 61 87 60 85 26 0.973 7.5997217878722 81.522245509286 408.89039119469
+144	159512 671 62 87 61 85 25 2334.2278371524 2433.8209236133 59682.62996324 142504233.35307
+145	160183 672 62 87 61 85 25 1578.4478435991 1724.9662897103 41419.015689413 68680226.890626
+146	160855 644 63 87 62 85 24 4.018615917157 13.970749160051 258.33068400841 2976.297186728
+147	161499 651 64 87 63 85 23 -1.9674406469857 2.1492465194734 8.394506563139 42.927591640679
+148	162150 538 64 87 63 85 23 0.973 8.1667304192483 75.688828830569 395.36979249838
+151	162688 593 65 87 64 85 22 2333.8928241752 2424.5701100802 52340.216235831 124540048.0967
+152	163281 592 65 87 64 85 22 1578.4634011481 1701.0101400055 36221.956758783 59682916.958009
+153	163873 563 66 87 65 85 21 4.2842987557744 12.295008240868 228.12392120189 2596.0142138303
+154	164436 573 67 87 66 85 20 -3.0055090464511 2.0492601770512 2.673166837467 28.941630967341
+155	165009 518 67 87 66 85 20 0.973 7.3415326447534 52.344330013299 193.44150131901
+158	165527 510 68 87 67 85 19 2334.134043377 2414.8461773879 45160.699987626 107354512.03281
+159	166037 510 68 87 67 85 19 1578.4618975855 1699.5134994742 31184.839119788 51222547.69721
+160	166547 483 69 87 68 85 18 4.1832233416825 13.955367659324 211.52639266692 2641.997862299
+161	167030 483 70 87 69 85 17 -2.3220548242241 2.1458663539286 4.4976791364291 28.747409946805
+162	167513 419 70 87 69 85 17 0.973 7.8311198804753 51.254932797051 249.82738871267
+165	167932 430 71 87 70 85 16 2334.5092807864 2414.8737180224 37952.946732534 90039140.834444
+166	168362 429 71 87 70 85 16 1578.4517848091 1678.01298209 25937.284599856 42063399.772768
+167	168791 404 72 87 71 85 15 4.0859593419879 10.402773770734 141.35481901789 1384.1907594446
+168	169195 405 73 87 72 85 14 -0.075924052584451 1.9185597577179 6.2071817579882 10.942065722041
+169	169600 378 73 87 72 85 14 1.5193616351551 6.1139389675705 35.507530354225 118.80882398982
+172	169978 345 74 87 73 85 13 2334.045741496 2414.8769514603 30901.842233562 73465746.201431
+173	170323 350 74 87 73 85 13 1578.4505975069 1664.154526961 20974.068478249 33850066.258208
+174	170673 322 76 87 74 85 12 4.0735588402093 12.998291028097 123.93793420387 1373.6714092101
+175	170995 309 77 87 75 85 11 -0.59127014786565 2.2564944986859 6.9932254044287 17.48245811566
+176	171304 247 77 87 75 85 11 0.973 8.3392083846763 35.556298802783 183.58594481136
+179	171551 269 78 87 76 85 10 2349.4291188199 2414.8732395561 23876.0833141 57011417.849693
+180	171820 269 78 87 76 85 10 1578.4519604994 1640.0288314577 16021.08912374 25671960.010306
+181	172089 243 79 87 77 85 9 4.0635240824116 13.987120267581 95.988817449466 1139.3168257499
+182	172332 223 80 87 78 85 8 -0.068476150678471 2.0509393013455 9.8551200344912 19.345360423677
+183	172555 216 80 87 78 85 8 1.8008335806307 8.6102118406059 38.320423919218 229.67750659119
+186	172771 189 81 87 79 85 7 2379.9892216683 2414.8461739381 16801.124136171 40326360.911432
+187	172960 189 81 87 79 85 7 1578.4618988531 1609.0756573966 11128.02495814 17691224.79579
+188	173149 162 82 87 80 85 6 4.0267229073465 13.138033295601 51.856454920062 505.72465196931
+189	173311 134 83 87 81 85 5 1.717378232351 1.9210104491166 9.1113103882549 16.628258713311
+190	173445 135 83 87 81 85 5 4.1699391246736 7.7094831312155 29.195346827101 177.76911031982
+193	173580 108 84 87 82 85 4 2402.6625869117 2414.8840517174 9637.006395105 23218059.067214
+194	173688 108 84 87 82 85 4 1578.4479903299 1586.1106620105 6325.324420142 10002466.758058
+195	173796 81 85 87 83 85 3 3.8169569386458 7.5873002581843 17.170896486577 105.39041417738
+196	173877 54 86 87 84 85 2 1.8206609684369 1.9496823511017 3.7703433195385 7.1160676321867
+197	173931 53 86 87 84 85 2 4.1154883535467 4.845510771239 8.9609991247856 40.416219022371
+200	173984 27 87 87 85 85 1 2414.8924359679 2414.8924359679 2414.8924359679 5831705.4772951
+201	174011 27 87 87 85 85 1 1578.4449116765 1578.4449116765 1578.4449116765 2491488.3391973
+

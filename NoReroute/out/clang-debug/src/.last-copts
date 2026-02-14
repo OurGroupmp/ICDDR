@@ -1,0 +1,1 @@
+-O0 -Wall -glldb -fstandalone-debug   -MMD -MP -MF .d    -isystem /opt/mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-omit-frame-pointer  -DOMNETPPLIBS_IMPORT -DVEINS_IMPORT -IC:/Users/Pranitha/Downloads/veins-5.3.1/veins-veins-5.3.1/src -I/c/Users/Pranitha/Downloads/omnetpp-6.1.0/omnetpp-6.1/include

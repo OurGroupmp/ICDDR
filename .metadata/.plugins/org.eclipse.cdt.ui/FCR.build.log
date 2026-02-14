@@ -1,0 +1,9 @@
+11:34:19 **** Incremental Build of configuration release for project FCR ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/FCR/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/FCR/src'
+
+11:34:20 Build Finished. 0 errors, 0 warnings. (took 1s.241ms)
+

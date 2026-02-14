@@ -1,0 +1,9 @@
+12:12:01 **** Incremental Build of configuration release for project ICDDR ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/ICDDR/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/Users/Pranitha/OneDrive/Desktop/ICDDR/ICDDR/src'
+
+12:12:02 Build Finished. 0 errors, 0 warnings. (took 1s.199ms)
+
